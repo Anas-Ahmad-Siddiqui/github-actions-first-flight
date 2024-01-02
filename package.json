@@ -1,0 +1,23 @@
+{
+  "name": "github-actions-first-flight",
+  "version": "1.0.0",
+  "description": "The starting point for our exciting journey into Continuous Integration and Continuous Deployment (CI/CD). This repository serves as the heart of our automation efforts, streamlining the development, testing, and deployment processes using github actions.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anas-Ahmad-Siddiqui/github-actions-first-flight.git"
+  },
+  "author": "Anas Siddiqui",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anas-Ahmad-Siddiqui/github-actions-first-flight/issues"
+  },
+  "homepage": "https://github.com/Anas-Ahmad-Siddiqui/github-actions-first-flight#readme",
+  "dependencies": {
+    "axios": "^1.6.3",
+    "express": "^4.18.2"
+  }
+}
