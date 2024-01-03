@@ -29,3 +29,15 @@ jobs:
     - run: npm ci
     - run: npm run build --if-present
     - run: npm start & npx wait-on http://127.0.0.1:3000
+
+    - name: Deploy to remote Server
+      uses: appleboy/ssh-action@main
+      with:
+        host: 15.206.78.9
+        username: ec2-user
+        key: ${{ secrets.SSH_PRIVATE_KEY }}
+        ssh: |
+            cd /home/ec2-user/github-actions-first-flight/
+            git pull origin main
+            npm install
+            npm run start
