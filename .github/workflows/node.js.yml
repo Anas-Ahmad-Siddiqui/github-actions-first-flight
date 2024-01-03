@@ -31,7 +31,7 @@ jobs:
     - run: npm start & npx wait-on http://127.0.0.1:3000
 
     - name: Deploy to remote Server
-      uses: appleboy/ssh-action@main
+      uses: appleboy/ssh-action@master
       with:
         host: 15.206.78.9
         username: ec2-user
