@@ -40,4 +40,7 @@ jobs:
             cd /home/ec2-user/github-actions-first-flight/
             git pull origin main
             npm install
-            npm run start
+            sudo pm2 start server.js --name GithubActions-app
+            sudo pm2 save
+            sudo pm2 startup
+            sudo pm2 restart GithubActions-app
