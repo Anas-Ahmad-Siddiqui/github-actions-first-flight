@@ -4,7 +4,8 @@
   "description": "The starting point for our exciting journey into Continuous Integration and Continuous Deployment (CI/CD). This repository serves as the heart of our automation efforts, streamlining the development, testing, and deployment processes using github actions.",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -19,5 +20,9 @@
   "dependencies": {
     "axios": "^1.6.3",
     "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^6.3.3"
   }
 }

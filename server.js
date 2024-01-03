@@ -9,12 +9,19 @@ app.get('/', (req, res) => {
 });
 
 app.get('/items', (req, res) => {
-    axios.get('https://jsonplaceholder.typicode.com/users')
-      .then(response => {
-        res.send(response.data);
-    })   
+  axios.get('https://jsonplaceholder.typicode.com/users')
+    .then(response => {
+      res.send(response.data);
+    })
 })
 
-app.listen(port, () => {
-  console.log(`Server listening at http://localhost:${port}`);
-});
+if (require.main === module) {
+  app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+  });
+} else {
+  module.exports = app
+}
+
+
+
