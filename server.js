@@ -5,7 +5,7 @@ const app = express();
 const port = 3002;
 
 app.get('/', (req, res) => {
-  res.send('<h1>Express Demo App</h1> <h4>Message: Successfully deployed using Github Actions</h4> <p>Version: 1.2<p>');
+  res.send('<h1>Express Demo App</h1> <h4>Message: Successfully deployed using Github Actions</h4> <p>Version: 1.3<p>');
 });
 
 app.get('/items', (req, res) => {
